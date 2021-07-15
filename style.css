@@ -253,3 +253,25 @@
         padding: 5px;
         color: #0B0D17;
     }
+    /* -------------------------
+      Mobilr devices
+------------------------- */
+    
+    @media only screen and (max-width:688px) {
+        .main-bar,
+        .players-info,
+        .footer {
+            width: 100%;
+        }
+        .page-point,
+        .Player-bio,
+        .higlt-info {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 25px;
+        }
+        .player {
+            display: flex;
+            flex-direction: column;
+        }
+    }
